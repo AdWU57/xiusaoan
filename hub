@@ -11,7 +11,7 @@ LocalPlayer.Idled:Connect(function()
     VirtualUser:ClickButton2(Vector2.new())
 end)
 
-local window = library:AddWindow("         LegHHH Scripts", {main_color = Color3.fromRGB(255,1,1), min_size = Vector2.new(225,395), can_resize = true})
+local window = library:AddWindow("               Xypher", {main_color = Color3.fromRGB(255,1,1), min_size = Vector2.new(225,395), can_resize = true})
 local farmTab = window:AddTab("Farm")
 local miscTab = window:AddTab("Misc")
 local teleportTab = window:AddTab("Teleport")
@@ -24,7 +24,7 @@ for _, obj in pairs(workspace:GetDescendants()) do if obj:IsA("BasePart") then o
 workspace.DescendantAdded:Connect(function(obj) if obj:IsA("BasePart") then obj.CastShadow=false end end)
 
 farmTab:Show()
-farmTab:AddLabel("                   FOR XYPHER")
+farmTab:AddLabel("                    By LegHHH")
 
 local autoFarmFolder = farmTab:AddFolder("                 Farm")
 autoFarmFolder:AddSwitch("Auto Weight", function(bool)
